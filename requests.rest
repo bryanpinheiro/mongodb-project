@@ -1,0 +1,50 @@
+@host = {{$dotenv HOSTNAME}}:{{$dotenv PORT}}
+
+@baseUrl = http://{{host}}/api
+
+###
+
+# @name getAllBooks
+GET {{baseUrl}}/books
+
+###
+
+# @name createBook
+POST {{baseUrl}}/books
+Content-Type: application/json
+
+{
+    "author": "Bryan",
+    "title": "MongoDB"
+}
+
+###
+
+@id = 60b087e5e34712445cd1bc06
+
+# @name getBookById
+GET {{baseUrl}}/books/{{id}}
+
+###
+
+# @name updateBookById
+PUT {{baseUrl}}/books/{{id}}
+Content-Type: application/json
+
+{
+    "author": "Bryan",
+    "title": "Typescript"
+}
+
+# @name updateBookExtraInformationById
+PATCH {{baseUrl}}/books/{{id}}
+Content-Type: application/json
+
+{
+    "extraInformation": "Made in Brazil"
+}
+
+###
+
+# @name deleteBookById
+DELETE {{baseUrl}}/books/{{id}}
