@@ -25,7 +25,7 @@ Then, add these variables:
 `PORT`
 `MONGO_URI`
 
-***(Observation):** the code below allows typescript to use the **module resolution strategy** defined in the `tsconfig.json`. The parameter `require` means to execute the module `tsconfig-paths/register` before anything else.*
+***(Observation):** the code below is in the `package.json` file and it allows typescript to use the **module resolution strategy** defined in the `tsconfig.json`. The parameter `require` means to execute the module `tsconfig-paths/register` before anything else.*
 
 ```
 ts-node --require tsconfig-paths/register 
