@@ -24,6 +24,12 @@ Then, add these variables:
 `HOSTNAME`
 `PORT`
 `MONGO_URI`
+
+***(Observation):** the code below allows typescript to use the **module resolution strategy** defined in the `tsconfig.json`. The parameter `require` means to execute the module `tsconfig-paths/register` before anything else.*
+
+```
+ts-node --require tsconfig-paths/register 
+```
    
 ### 3. Starting the server
 ```
