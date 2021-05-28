@@ -20,7 +20,7 @@ Content-Type: application/json
 
 ###
 
-@id = 60b087e5e34712445cd1bc06
+@id = 60b0a5f673c1d52ec07802a1
 
 # @name getBookById
 GET {{baseUrl}}/books/{{id}}
@@ -35,6 +35,8 @@ Content-Type: application/json
     "author": "Bryan",
     "title": "Typescript"
 }
+
+###
 
 # @name updateBookExtraInformationById
 PATCH {{baseUrl}}/books/{{id}}

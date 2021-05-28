@@ -4,7 +4,8 @@ const MONGO_URI = process.env["MONGO_URI"] as string;
 
 const MONGO_OPTIONS = {
     useNewUrlParser: true,
-    useUnifiedTopology: true
+    useUnifiedTopology: true,
+    useFindAndModify: false
 }
 
 export {

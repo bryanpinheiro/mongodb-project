@@ -60,12 +60,8 @@ async function updateBookById(req: Request, res: Response, next: NextFunction) {
             return res.sendStatus(400);
         }
 
-        console.log("body: ", req.body);
-
         const id = req.params.id;
         const updatedBook = req.body as IBook;
-
-        console.log("updatedBook: ", updatedBook);
 
         await bookRepository.updateBookById(id, updatedBook)
         .then(() => {
@@ -100,7 +96,7 @@ async function updateBookExtraInformationById(req: Request, res: Response, next:
             });
         });
     } catch(error) {
-        console.log("An error ocurred on updating a book, error: ", error);
+        console.log("An error ocurred on updating a book's extra information, error: ", error);
     }
 }
 

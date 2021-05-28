@@ -38,10 +38,7 @@ class BookRepository implements IBookRepository {
     updateBookById(id: string, book: IBook) {
         return BookModel.findOneAndUpdate({
             _id: id
-        },
-        {
-            book
-        }).exec();
+        }, book).exec();
     }
 
     updateBookExtraInformationById(id: string, extraInformation: string) {
