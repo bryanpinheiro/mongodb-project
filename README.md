@@ -24,8 +24,6 @@ Then, add these variables:
 `HOSTNAME`
 `PORT`
 `MONGO_URI`
-
-:bulb:***TIP**: run the commands below on your terminal to generate random secrets.*
    
 ### 3. Starting the server
 ```
