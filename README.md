@@ -1,6 +1,6 @@
 # mongodb-project
-![dependencies](https://img.shields.io/david/bryansouza/jwt-project)
-![typescript](https://img.shields.io/github/languages/top/bryansouza/jwt-project)
+![dependencies](https://img.shields.io/david/bryansouza/mongodb-project)
+![typescript](https://img.shields.io/github/languages/top/bryansouza/mongodb-project)
 
 This project is a simple RESTFul API in which uses `mongodb` and `mongoose`.
 
